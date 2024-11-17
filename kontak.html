@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak Kami</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+        margin-top: 20px;
+      }
+      .contact-container {
+        max-width: 800px;
+        margin: 20px;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .contact-info {
+        margin-bottom: 20px;
+      }
+      .contact-info p {
+        margin: 8px 0;
+        font-size: 16px;
+        color: #555;
+      }
+      .contact-info a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      .contact-info a:hover {
+        text-decoration: underline;
+      }
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+      }
+      .contact-form input,
+      .contact-form textarea {
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        box-sizing: border-box;
+      }
+      .contact-form textarea {
+        width: 100%;
+      }
+      .contact-form button {
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .contact-form button:hover {
+        background-color: #0056b3;
+      }
+      .social-links {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .social-links a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #007bff;
+        font-size: 18px;
+      }
+      .social-links a:hover {
+        color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Kontak Kami</h1>
+    <div class="contact-container">
+      <!-- Informasi Kontak -->
+      <div class="contact-info">
+        <h2>Informasi Kontak</h2>
+        <p>Email: <a href="mailto:pkmteam@example.com">pkmkelompokgacoan@gmail.com</a></p>
+        <p>Telepon/WhatsApp: <a href="tel:+6281234567890">+62 812-XXXX-XXXX</a></p>
+        <p>Alamat: Sesuai arahan ketua yang pasti kita langsung kumpul</p>
+      </div>
+
+      <!-- Formulir Kontak -->
+      <div class="contact-form">
+        <h2>Formulir Kontak</h2>
+        <form action="submit_contact.php" method="POST">
+          <input type="text" name="name" placeholder="Nama Anda" required />
+          <input type="email" name="email" placeholder="Email Anda" required />
+          <textarea name="message" rows="5" placeholder="Pesan Anda....." required></textarea>
+          <button type="submit">Kirim Pesan</button>
+        </form>
+      </div>
+
+      <!-- Media Sosial -->
+      <div class="social-links">
+        <h2>Ikuti Kami</h2>
+        <a href="https://facebook.com/pkmteam" target="_blank">Facebook</a>
+        <a href="https://instagram.com/pkmteam" target="_blank">Instagram</a>
+        <a href="https://linkedin.com/pkmteam" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </body>
+</html>

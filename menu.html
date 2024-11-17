@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <!-- Menambahkan Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+      }
+      body {
+        flex-direction: column;
+        background-color: #f4f4f4; /* Warna latar opsional */
+      }
+      a {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+        color: black;
+        flex: 1; /* Membuat setiap menu mengisi ruang yang sama */
+        background-color: #fff; /* Warna menu */
+      }
+      a:hover {
+        background-color: #ddd; /* Warna saat hover */
+      }
+      i {
+        margin-right: 10px; /* Jarak antara ikon dan teks */
+      }
+    </style>
+  </head>
+  <body>
+    <a href="home.html" target="contentFrame"> <i class="fas fa-home"></i>Home </a>
+    <a href="profil.html" target="contentFrame"> <i class="fas fa-user"></i>Profil </a>
+    <a href="galery.html" target="contentFrame"> <i class="fas fa-images"></i>Galeri </a>
+    <a href="kontak.html" target="contentFrame"> <i class="fas fa-phone-alt"></i>Kontak </a>
+  </body>
+</html>

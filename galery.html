@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeri PKM</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+      }
+      h1,
+      h2 {
+        text-align: center;
+        color: #333;
+      }
+      .gallery-section {
+        margin: 20px;
+      }
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+        padding: 20px;
+      }
+      .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .gallery-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.3s ease;
+      }
+      .gallery-item:hover img {
+        transform: scale(1.1);
+      }
+      .gallery-item .caption {
+        position: absolute;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center; padding: 10px; color: #333">Galeri Kegiatan PKM</h1>
+    <hr size="1" color="black" style="margin: 10px" />
+
+    <!-- Galeri Sebelum Kegiatan -->
+    <div class="gallery-section">
+      <h2>Sebelum Kegiatan</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="img/k4.JPG" alt="Persiapan Pelatihan" />
+          <div class="caption">Persiapan Kegiatan</div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/k1.JPG" alt="Persiapan Pelatihan" />
+          <div class="caption">Persiapan Pelatihan</div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/k2.JPG" alt="Briefing Tim" />
+          <div class="caption">Briefing Tim</div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/k3.JPG" alt="Pembuatan Modul" />
+          <div class="caption">Pembuatan Modul</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Galeri Selama Kegiatan -->
+    <div class="gallery-section">
+      <h2>Selama Kegiatan</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="img/2.JPG" alt="Sesi Pelatihan" />
+          <div class="caption">Sesi Pelatihan</div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/s3.JPG" alt="Hasil Karya Siswa" />
+          <div class="caption">Sesi Praktik</div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/s4.JPG" alt="Momen Kebersamaan" />
+          <div class="caption">Momen Kebersamaan</div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/s6.JPG" alt="Penutupan Kegiatan" />
+          <div class="caption">Penutupan Kegiatan</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

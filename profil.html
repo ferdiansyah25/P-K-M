@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil PKM</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+        margin-top: 20px;
+      }
+      header {
+        text-align: center;
+        background-color: #4caf50;
+        color: white;
+        margin: 5px;
+      }
+      h3 {
+        margin-top: 0;
+      }
+      hr {
+        border: 1px solid #ddd;
+        width: 80%;
+        margin: 20px auto;
+      }
+      .container {
+        width: 80%;
+        height: 70%;
+        margin: 20px auto; /* Menambahkan jarak top dan bottom container */
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+      .slider {
+        position: relative;
+        max-width: 100%;
+        margin: auto;
+        overflow: hidden;
+      }
+      .slides {
+        display: flex;
+        transition: transform 0.5s ease;
+      }
+      .slide {
+        min-width: 100%;
+        box-sizing: border-box;
+      }
+      .slide img {
+        width: 100%;
+        height: auto;
+      }
+      .p1 {
+        text-align: center;
+      }
+      h4 {
+        font-size: 1.2em;
+        color: #333;
+      }
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+      li {
+        font-size: 1.1em;
+        margin-bottom: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Profil Anggota</h1>
+    <div class="container">
+      <div class="slider">
+        <div class="slides">
+          <div class="slide">
+            <img src="img/p1.JPG" alt="PKM Image 1" />
+          </div>
+          <div class="slide">
+            <img src="img/p2.JPG" alt="PKM Image 2" />
+          </div>
+          <div class="slide">
+            <img src="img/p3.JPG" alt="PKM Image 3" />
+          </div>
+        </div>
+      </div>
+
+      <p class="p1">“Terkadang, jalan menuju impian tidak selalu lurus. Ada tikungan, tanjakan, dan kerikil di sepanjang jalan. Tapi, selama kamu terus melangkah, kamu akan sampai pada tujuan”</p>
+
+      <h4>Dosen Pendamping :</h4>
+      <ul>
+        <li>Nurhasanah S.Kom M.Kom</li>
+      </ul>
+
+      <h4>Anggota PKM :</h4>
+      <ul>
+        <li>Rahmat Tamim (Ketua Pelaksana)</li>
+        <li>An Najmi As Syifa (MC)</li>
+        <li>Zulfa Bahrul Akmal (Doa Pembuka)</li>
+        <li>Rhevo Aliffiano (Pemateri)</li>
+        <li>Muhammad Fadhiil Agam (Praktik 1)</li>
+        <li>Muhammad Iqbal Wibowo (Praktik 2)</li>
+        <li>Anggita Tri Sundari (Praktik 3)</li>
+        <li>Nouval Ferdiansyah (Dokumentasi 1)</li>
+        <li>Yanuar Nurfirgiansyah (Dokumentasi 2)</li>
+        <li>Muhammad Qosim Nur Abid (Konsumsi)</li>
+      </ul>
+    </div>
+
+    <script>
+      let currentSlide = 0;
+      const slides = document.querySelectorAll(".slide");
+      const totalSlides = slides.length;
+
+      function showSlide() {
+        const newTransformValue = -currentSlide * 100;
+        document.querySelector(".slides").style.transform = `translateX(${newTransformValue}%)`;
+      }
+
+      setInterval(() => {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        showSlide();
+      }, 3000); // Change image every 3 seconds
+    </script>
+  </body>
+</html>
